@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections</title>
+
+    <!-- Internal style sheet reference -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- font awesome reference -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link>
+
+    <!-- Script file reference -->
+    <script src="./common.js" defer></script>
+    <script src="./collections.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- header content load -->
+
+    <div id="header" style="position: sticky; top:0; z-index:1500"></div>
+
+    <!-- Collection page main content starts here -->
+
+    <!-- Collections add -->
+    <section class="collections-add">
+        <div class="container">
+            <p class="section-label">Browse All</p>
+            <h1 class="section-title" style="color:white">Our Collections</h1>
+        </div>
+    </section>
+
+    <section class="checkbox-place">
+        <div class="checkbox-container">
+            <label><input type="checkbox" value="all" checked> All</label>
+            <label><input type="checkbox" value="tshirt"> T.Shirts</label>
+            <label><input type="checkbox" value="hoodie"> Hoodies</label>
+            <label><input type="checkbox" value="jacket"> Jackets</label>
+            <label><input type="checkbox" value="pants"> Pants</label>
+            <label><input type="checkbox" value="frock"> Frock</label>
+            <label><input type="checkbox" value="footwear"> Footwear</label>
+            <label><input type="checkbox" value="sale"> Sale</label>
+            <label><input type="checkbox" value="new"> New</label>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <form class="search-container" role="search">
+            <input id="search-collections" type="search" class="search-input" placeholder="Search the collections....."
+                aria-label="Search content">
+            <button type="submit" class="search-button">
+                <!-- SVG Magnifying Glass Icon -->
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                        d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                </svg>
+            </button>
+        </form>
+    </section>
+
+    <!-- Collections -->
+    <div class="product-back">
+        <section class="products-section">
+            <div class="container">
+                <div class="wanted-grid" id="collections-container">
+
+                    <!-- one -->
+                    <div class="product-card" data-category="Frock new" data-price="1299"
+                        data-name="A-Line Maxi Dresses - Frock">
+                        <div class="product-img">
+                            <img src="./Images/collections 17.jpg" alt="Dress Collections" />
+                            <span class="product-badge badge-new">New</span>
+                            <button class="product-wish">♡</button>
+                            <button class="quick-add">Quick Add</button>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-name">A-Line Maxi Dresses - Frock"</p>
+                            <div class="product-price"><span class="price-current">₹1,299</span></div>
+                        </div>
+                    </div>
+                    <!-- Two -->
+                    <div class="product-card" data-category="pants new" data-price="2199"
+                        data-name="Women stylist pant">
+                        <div class="product-img">
+                            <img src="./Images/style 3.jpg" alt="Dress Collections" />
+                            <span class="product-badge badge-new">New</span>
+                            <button class="product-wish">♡</button>
+                            <button class="quick-add">Quick Add</button>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-name">Women stylist pant</p>
+                            <div class="product-price"><span class="price-current">₹2,199</span></div>
+                        </div>
+                    </div>
+                    <!-- Three -->
+                    <div class="product-card" data-category="Jackets sale" data-price="2799" data-name="Women jacket"
+                        data-original="3499">
+                        <div class="product-img">
+                            <img src="./Images/style 2.jpg" alt="Dress Collections" />
+                            <span class="product-badge badge-sale">Sale</span>
+                            <button class="product-wish">♡</button>
+                            <button class="quick-add">Quick Add</button>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-name">Women Jacket</p>
+                            <div class="product-price">
+                                <span class="price-current">₹2,799</span>
+                                <span class="price-old">₹3,499</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Four -->
+                    <div class="product-card" data-category="Frocks new" data-price="1799" data-name="Casual frocks">
+                        <div class="product-img">
+                            <img src="./Images/collections 18.jpg" alt="Dress Collections" />
+                            <span class="product-badge badge-new">New</span>
+                            <button class="product-wish">♡</button>
+                            <button class="quick-add">Quick Add</button>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-name">Casual frocks</p>
+                            <div class="product-price"><span class="price-current">₹1,799</span></div>
+                        </div>
+                    </div>
+                    <!-- Five -->
+                    <div class="product-card" data-category="pants sale" data-price="4499" data-name="Men variety pants"
+                        data-original="5999">
+                        <div class="product-img">
+                            <img src="./Images/style 5.jpg" alt="Dress Collections" />
+                            <span class="product-badge badge-sale">Sale</span>
+                            <button class="product-wish">♡</button>
+                            <button class="quick-add">Quick Add</button>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-name">Men variety pants</p>
+                            <div class="product-price">
+                                <span class="price-current">₹4,499</span>
+                                <span class="price-old">₹5,999</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Six -->
+                    <div class="product-card" data-category="Tshirts" data-price="3999" data-name="Women Jackets">
+                        <div class="product-img">
+                            <img src="./Images/collections 1.jpeg" alt="Dress Collections" />
+                            <button class="product-wish">♡</button>
+                            <button class="quick-add">Quick Add</button>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-name">Women T.shirts</p>
+                            <div class="product-price"><span class="price-current">₹3,999</span></div>
+                        </div>
+                    </div>
+                    <!-- Seven -->
+                    <div class="product-card" data-category="Jackets new" data-price="5299" data-name="Men Jackets"
+                        data-original="6499">
+                        <div class="product-img">
+                            <img src="/Images/collections 2.jpeg" alt="Dress Collections" />
+                            <span class="product-badge badge-new">New</span>
+                            <button class="product-wish">♡</button>
+                            <button class="quick-add">Quick Add</button>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-name">Men Jackets</p>
+                            <div class="product-price">
+                                <span class="price-current">₹5,299</span>
+                                <span class="price-old">₹6,499</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Eight -->
+                    <div class="product-card" data-category="Footwear" data-price="3499" data-name="Men casual shoes">
+                        <div class="product-img">
+                            <img src="./Images/collections 3.jpg" alt="Dress Collections" />
+                            <button class="product-wish">♡</button>
+                            <button class="quick-add">Quick Add</button>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-name">Men casual shoes</p>
+                            <div class="product-price"><span class="price-current">₹3,499</span></div>
+                        </div>
+                    </div>
+                    <!-- Nine -->
+                    <div class="product-card" data-category="Footwear" data-price="899" data-name="Women casual shoes">
+                        <div class="product-img">
+                            <img src="./Images/collections 4.jpg" alt="Dress Collections" />
+                            <button class="product-wish">♡</button>
+                            <button class="quick-add">Quick Add</button>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-name">Women casual shoes</p>
+                            <div class="product-price"><span class="price-current">₹899</span></div>
+                        </div>
+                    </div>
+                    <!-- Ten -->
+                    <div class="product-card" data-category="tshirt" data-price="3199"
+                        data-name="Women TShirt collections">
+                        <div class="product-img">
+                            <img src="./Images/collections 6.jpg" alt="Dress Collections" />
+                            <span class="product-badge badge-new">New</span>
+                            <button class="product-wish">♡</button>
+                            <button class="quick-add">Quick Add</button>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-name">Women T.Shirt collections</p>
+                            <div class="product-price"><span class="price-current">₹3,199</span></div>
+                        </div>
+                    </div>
+                    <!-- Eleven -->
+                    <div class="product-card" data-category="Hoodie new" data-price="5299"
+                        data-name=" Woolen Hoodie collections" data-original="6499">
+                        <div class="product-img">
+                            <img src="./Images/collections 7.jpg" alt="Dress Collections" />
+                            <span class="product-badge badge-new">New</span>
+                            <button class="product-wish">♡</button>
+                            <button class="quick-add">Quick Add</button>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-name"> Woolen Hoodie collections</p>
+                            <div class="product-price">
+                                <span class="price-current">₹5,299</span>
+                                <span class="price-old">₹6,499</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Twelve -->
+                    <div class="product-card" data-category="frocks" data-price="3499" data-name="Party frocks">
+                        <div class="product-img">
+                            <img src="./Images/collections 19.jpg" alt="Dress Collections" />
+                            <button class="product-wish">♡</button>
+                            <button class="quick-add">Quick Add</button>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-name">Party frocks</p>
+                            <div class="product-price"><span class="price-current">₹3,499</span></div>
+                        </div>
+                    </div>
+                    <!-- Thirteen -->
+                    <div class="product-card" data-category="Jacket" data-price="899" data-name="Women Jacket">
+                        <div class="product-img">
+                            <img src="./Images/collections 8.jpg" alt="Dress Collections" />
+                            <button class="product-wish">♡</button>
+                            <button class="quick-add">Quick Add</button>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-name">Women Jacket</p>
+                            <div class="product-price"><span class="price-current">₹899</span></div>
+                        </div>
+                    </div>
+                    <!-- Fourteen -->
+                    <div class="product-card" data-category="Jacket new" data-price="3199"
+                        data-name="Winter wear Jacket">
+                        <div class="product-img">
+                            <img src="./Images/collections 9.jpg" alt="Dress Collections" />
+                            <span class="product-badge badge-new">New</span>
+                            <button class="product-wish">♡</button>
+                            <button class="quick-add">Quick Add</button>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-name">Winter wear Jacket</p>
+                            <div class="product-price"><span class="price-current">₹3,199</span></div>
+                        </div>
+                    </div>
+                    <!-- Fifteen -->
+                    <div class="product-card" data-category="footwear" data-price="2499"
+                        data-name="Canvas Low-Top Shoes">
+                        <div class="product-img">
+                            <img src="./Images/collections 11.jpg" alt="Dress Collections" />
+                            <button class="product-wish">♡</button>
+                            <button class="quick-add">Quick Add</button>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-name">Canvas Low-Top Shoes</p>
+                            <div class="product-price"><span class="price-current">₹2,499</span></div>
+                        </div>
+                    </div>
+                    <!-- Sixteen -->
+                    <div class="product-card" data-category="pants sale" data-price="1499"
+                        data-name="Men Jean Collections" data-original="1999">
+                        <div class="product-img">
+                            <img src="./Images/collections 10.jpg" alt="Dress Collections" />
+                            <span class="product-badge badge-sale">Sale</span>
+                            <button class="product-wish">♡</button>
+                            <button class="quick-add">Quick Add</button>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-name">Men Jean Collections</p>
+                            <div class="product-price">
+                                <span class="price-current">₹1,499</span>
+                                <span class="price-old">₹1,999</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Seventeen -->
+                    <div class="product-card" data-category="pants" data-price="3499" data-name="Women Jeans">
+                        <div class="product-img">
+                            <img src="./Images/collections 12.jpg" alt="Dress Collections" />
+                            <button class="product-wish">♡</button>
+                            <button class="quick-add">Quick Add</button>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-name">Women Jeans</p>
+                            <div class="product-price"><span class="price-current">₹3,499</span></div>
+                        </div>
+                    </div>
+                    <!-- Eighteen -->
+                    <div class="product-card" data-category="frock" data-price="899"
+                        data-name="Women floral print frocks">
+                        <div class="product-img">
+                            <img src="./Images/collections 13.jpg" alt="Dress Collections" />
+                            <button class="product-wish">♡</button>
+                            <button class="quick-add">Quick Add</button>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-name">Women floral print frocks</p>
+                            <div class="product-price"><span class="price-current">₹899</span></div>
+                        </div>
+                    </div>
+                    <!-- Nineteen -->
+                    <div class="product-card" data-category="frock new" data-price="3199" data-name="Maxi Collection">
+                        <div class="product-img">
+                            <img src="./Images/collections 14.jpg" alt="Dress Collections" />
+                            <span class="product-badge badge-new">New</span>
+                            <button class="product-wish">♡</button>
+                            <button class="quick-add">Quick Add</button>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-name">Maxi Collection</p>
+                            <div class="product-price"><span class="price-current">₹3,199</span></div>
+                        </div>
+                    </div>
+                    <!-- Twenty -->
+                    <div class="product-card" data-category="frock new" data-price="5299" data-name="Exotic party wear"
+                        data-original="6499">
+                        <div class="product-img">
+                            <img src="./Images/collections 15.jpg" alt="Dress Collections" />
+                            <span class="product-badge badge-new">New</span>
+                            <button class="product-wish">♡</button>
+                            <button class="quick-add">Quick Add</button>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-name">Exotic party wear</p>
+                            <div class="product-price">
+                                <span class="price-current">₹5,299</span>
+                                <span class="price-old">₹6,499</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- No Results -->
+                    <div class="no-results" id="noResults">
+                        <div class="no-results-icon">🔍</div>
+                        <h3>No products found</h3>
+                        <p>Try a different search term or category filter.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- footer content load -->
+    <div id="footer"></div>
+
+</body>
+
+</html>
